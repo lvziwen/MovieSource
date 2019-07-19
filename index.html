@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link href="static/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+        <style>
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+                <a class="navbar-brand" href="#">小文</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mr-auto">
+                    <!-- <li class="nav-item active">
+                        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Link</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link disabled" href="#">Disabled</a>
+                    </li> -->
+                    </ul>
+                    <form class="form-inline my-2 my-lg-0">
+                        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                    </form>
+                </div>
+            </nav>
+            <div class="card rounded-0 mb-1 mt-1 text-white bg-dark">
+                <div class="card-header">
+                    愤怒的黄牛 성난황소 (2018)
+                </div>
+                <div class="card-body">
+                    <h5 class="card-title">剧情简介</h5>
+                    <p class="card-text">过去曾是黑帮成员的东哲，努力洗清黑暗的过去，和天使般善良的妻子智秀过着平凡的生活。某天妻子智秀遭到绑架。不久，一通陌生来电表示要付东哲一笔钱，要求东哲将妻子卖给他…东哲将用行动证明绑匪惹错了人！</p>
+                    <a href="#" class="btn btn-primary" onclick="download_info_show()">资源地址</a>
+                </div>
+            </div>
+            <div class="card rounded-0 mb-1 mt-1 text-white bg-dark">
+                <div class="card-header">
+                    亡命徒与天使 Outlaws and Angels (2016)
+                </div>
+                <div class="card-body">
+                    <h5 class="card-title">剧情简介</h5>
+                    <p class="card-text">When Outlaws on the lam invade the home of an unsuspecting, seemingly innocent, frontier family to hide out for the night, an unexpected game of cat and mouse ensues, leading to seduction, role reversal, and ultimately, bloody revenge. 
+                        <br>当亡命徒闯入毫无防备，看似无辜的家，身居边境的家庭趁夜逃离，猫鼠游戏却节外生枝，诱导迷惑，角色转换，最终，是血腥的复仇。</p>
+                    <a href="#" class="btn btn-primary" onclick="download_info_show()">资源地址</a>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" id="downloadInfoModal" tabindex="-1" role="dialog" aria-labelledby="downloadInfoModalTitle" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="downloadInfoModalTitle">下载信息</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        This is download information.
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">关闭</button>
+                        <button type="button" class="btn btn-primary">复制</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script>
+            function download_info_show(){
+                $("#downloadInfoModal").modal("toggle");
+            }
+        </script>
+        <script src="static/jquery-3.1.1.min.js"></script>
+        <script src="static/bootstrap/js/bootstrap.min.js"></script>
+    </body>
+</html>
